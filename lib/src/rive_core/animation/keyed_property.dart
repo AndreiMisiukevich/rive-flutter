@@ -9,7 +9,7 @@ abstract class KeyFrameInterface {
   int get frame;
 }
 
-class KeyFrameList<T extends KeyFrameInterface> {
+mixin class KeyFrameList<T extends KeyFrameInterface> {
   List<T> _keyframes = [];
   List<T> get keyframes => _keyframes;
   set keyframes(Iterable<T> frames) => _keyframes = frames.toList();
@@ -60,10 +60,6 @@ class KeyedProperty extends KeyedPropertyBase<RuntimeArtboard>
   @override
   void onAddedDirty() {}
 
-  @override
-  void onRemoved() {
-    super.onRemoved();
-  }
 
   /// Called by rive_core to add a KeyFrame to this KeyedProperty. This should
   /// be @internal when it's supported.

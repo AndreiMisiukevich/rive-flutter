@@ -9,7 +9,7 @@ import 'package:rive/src/rive_core/shapes/paint/stroke.dart';
 
 /// An abstraction to give a common interface to any component that can contain
 /// fills and strokes.
-abstract class ShapePaintContainer {
+abstract mixin class ShapePaintContainer {
   final Set<Fill> fills = {};
 
   final Set<Stroke> strokes = {};

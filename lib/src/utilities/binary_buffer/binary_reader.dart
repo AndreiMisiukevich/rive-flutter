@@ -6,7 +6,6 @@ class BinaryReader {
   final ByteData buffer;
   final Endian endian;
 
-  /// TODO: remove setter for readIndex when we remove _readVarInt from
   /// core_double_type.dart
   int readIndex = 0;
 

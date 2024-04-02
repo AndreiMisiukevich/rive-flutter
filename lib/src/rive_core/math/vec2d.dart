@@ -52,12 +52,12 @@ class Vec2D {
     return Vec2D.fromValues(x - v.x, y - v.y);
   }
 
-  // ignore: avoid_returning_this
   Vec2D apply(Mat2D m) {
     final newX = x * m[0] + y * m[2] + m[4];
     final newY = x * m[1] + y * m[3] + m[5];
     x = newX;
     y = newY;
+    // ignore: avoid_returning_this
     return this;
   }
 

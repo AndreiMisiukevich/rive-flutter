@@ -80,7 +80,6 @@ abstract class TransformComponent extends TransformComponentBase {
     Mat2D.scaleByValues(transform, scaleX, scaleY);
   }
 
-  // TODO: when we have layer effect renderers, this will need to render 1 for
   // layer effects.
   @override
   double get childOpacity => _renderOpacity;

@@ -374,7 +374,6 @@ class StateMachineController extends RiveAnimationController<CoreContext> {
         var hitTester = TransformingHitTester(hitArea);
         shape.fillHitTester(hitTester);
 
-        // TODO: figure out where we get the fill rule. We could get it from
         // the Shape's first fill or do we want to store it on the event as a
         // user-selectable value in the inspector?
 

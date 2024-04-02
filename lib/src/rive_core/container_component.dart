@@ -42,7 +42,6 @@ abstract class ContainerComponent extends ContainerComponentBase {
         continue;
       }
 
-      // TODO: replace with a more robust check.
       if (child is ContainerComponent) {
         child.forEachChild(cb);
       }

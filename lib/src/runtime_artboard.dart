@@ -108,7 +108,6 @@ class RuntimeArtboard extends Artboard implements CoreContext {
 
   @override
   void dirty(void Function() dirt) {
-    // TODO: Schedule a debounced callback for next frame
   }
 
   @override
